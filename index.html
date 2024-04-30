@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>Walkthrough</title>
+   </head>
+   <body>
+      <header class="header">
+         <a href="https://programmeren.gent/" target="_blank" style="width: 10%;"><img
+            src="./images/logo.png"
+            alt="artevelde logo"
+            /></a>
+         <a href="/app/index.html" class="header__left">Maak de Quizz</a>
+         <span class="header__right"
+            >Door
+         <a href="https://github.com/pgm-sebabrow">Sebastian Browaeys</a></span
+            >
+      </header>
+      <main>
+        <div class="wrapper">
+          <h1>Bouw nu zelf de quizz!</h1>
+          <section>
+            <h2>We maken de quizz met de bouwstenen van het web.</h2>
+          <p>Elke webpagina komt voort uit een combinatie HTML, CSS en Javascript.</p>
+          <ul>
+             <li><a href="#html">HTML voor de structuur</a></li>
+             <li><a href="#css">CSS voor de opmaak</a></li>
+             <li>
+                <a href="#js"
+                   >Javascript voor de interactiviteit</a
+                   >
+             </li>
+          </ul>
+          <img src="./images/web-building-blocks.jpg" alt="web-building-blocks" class="screenshot">
+          </section>
+         <hr>
+
+         <section>
+            <h2>Genoeg theorie, aan de slag!</h2>
+            <p>Het ontwikkelen van de pagina doen we in een bepaalde omgeving, wij werken in VS Code wanneer we bezig zijn met coderen.</p>
+            <p>Het project zelf bouwen we niet van scratch, je krijgt een startstructuur.</p>
+            <p>Download hieronder VS Code en startmap.</p>
+            <div class="button-container"> <a href="https://code.visualstudio.com/download" class="btn" target="_blank">Download VS Code</a>
+               <a href="web-design-quizz.zip"  download class="btn" target="_blank">Download startmap</a>
+              </div>
+          <br>
+          <p>Nadat je VS Code en de startmap hebt gedownload:</p>
+            <ol>
+               <li>Open je Visual Studio Code op je computer.</li>
+               <li>Klik je op de "File" tab in de linkerbovenhoek van jouw scherm.</li>
+               <li>Kies dan de optie "Open Folder" uit het dropdownmenu dat verschijnt.</li>
+               <li>Pak de gedownloade zip-folder uit en open de resulterende map.  </li>
+            </ol>
+            <img src="./images/openFolder.png" alt="open-folder-vs-code" class="screenshot">
+            <p>Als alles goed is, krijg je nu volgende structuur te zien:
+            </p>
+            <img
+               src="./images/start-structuur.png"
+               class="screenshot"
+               alt="start-structuur"
+               />
+            <p>
+              We installeren nog vlug een extensie die ons het levens als ontwikkelaar een stuk makkelijk maakt, de "Live Server"-extension
+            </p>
+            <img src="./images/extension.png" alt="extension" class="screenshot" />
+            <p>
+               Geef in de zoekbalk de naam "Live Server" in en, klik op de optie die
+               helemaal bovenaan verschijnt.
+            </p>
+            <p>Klik nu op install , dan wordt de LiveServer extensie geïnstalleerd.</p>
+            <img src="./images/live-server.png" alt="live-server-install" class="screenshot">
+            <br>
+            <p>We proberen de Live Server extensie even uit. <br> Ga naar je "index.html"-bestand (dat op dit moment nog volledig leeg is).
+            </p>
+            <p>Rechtermuisknop en kies dan de optie "Open with Live server"</p>
+            <img src="./images/open-with-live-server.png" alt="open-with-live-server" class="screenshot">
+            <p>Een lege webpagina opent...<br>
+               Dit is normaal! We hebben nog geen inhoud voor de pagina gemaakt. <br>Wel hebben we alles voorbereid om soepel te ontwikkelen.
+            </p> <br>
+            <p>Een korte recap van wat we tot nu toe gedaan hebben</p>
+            <ol>
+              <li>We hebben de ontwikkelingsomgeving(VS Code) gedownload en geopend.</li>
+              <li>We hebben de startfolder geopend in de ontwikkelingsomgeving.</li>
+              <li>We hebben een extensie geïnstalleerd(Live Server) die elke wijziging onmiddellijk visueel toont</li>
+           </ol>
+         </section>
+          <hr/>
+         <section id="html">
+            <h2>Inhoud maken voor de quizz-pagina met HTML</h2>
+            <a href="https://www.w3schools.com/html/" target="_blank"><img src="./images/HTML.webp" alt="html-logo" class="logo"></a>
+            <p>Met HTML geven we de pagina inhoud. <br>Daarbovenop krijgt de inhoud ook een bepaalde betekenis.<br>2 vliegen in één klap dus.</p>
+            <br>
+            <p>HTML-tags definiëren inhoud maar geven tegelijkertijd ook betekenis aan de inhoud die ze definiëren.</p>
+            <p>Het geheel van de HTML-tags en de inhoud zelf noemt men het HTML-element.</p>
+            <img src="./images/html-tag.png" alt="html-element" style="width: 50%;">
+            <br>
+            <p>Overloop de onderstaande tabel om een idee te krijgen van enkele veelgebruikte tags</p>
+            <table>
+              <tr>
+                 <th>Tag</th>
+                 <th>Beschrijft</th>
+                 
+              </tr>
+              <tr>
+                 <td>&lt;h1&gt;</td>
+                 <td>De belangrijkste titel op de pagina (waarover gaat je pagina als je dit in één zin of woord moet beschrijven)</td>
+                 
+              </tr>
+              <tr>
+                 <td>&lt;p&gt;</td>
+                 <td>Een gewone paragraaf ( denk aan een paragraaf in een boek)</td>
+              </tr>
+              <tr>
+                 <td>&lt;nav&gt;</td>
+                 <td>Een verzameling van links (denk aan een menu bovenaan de pagina)</td>
+              </tr>
+              <tr>
+                 <td>&lt;ul&gt;</td>
+                 <td>Een niet-geordende lijst (denk aan een boodschappenlijst)</td>
+              </tr>
+              <tr>
+                 <td>&lt;ol&gt;</td>
+                 <td>Een geordende lijst (denk aan een stappenplan, eerst dit, dan dat)</td>
+              </tr>
+              <tr>
+                 <td>&lt;li&gt;</td>
+                 <td>Een lijst item ( denk aan een item op een boodschappenlijst) </td>
+              </tr>
+              <tr>
+                 <td>&lt;a&gt;</td>
+                 <td>Een hyperlink (als je hierop klikt zal er iets openen)</td>
+              </tr>
+              
+            </table>
+            <br>
+            <p>Denk na wat er zal gebeuren wanneer je HTML-code zal toevoegen aan de momenteel nog blanco pagina.</p>
+            <p>Heb je nagedacht? Plak dan nu de onderstaande HTML-code in je "index.html"-bestand.</p>
+            <iframe
+  src="https://carbon.now.sh/embed/A9fsHvmaydFBeR3ZdWM1"
+  style="width: 1024px; height: 651px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            <p>Eenmaal je de code in het HTML document hebt geplakt, zie je inhoud verschijnen. Naast inhoud is er ook een visuele hiërarchie, de "START QUIZZING" tekst lijkt groot en belangrijk.</p>
+
+            <img src="./images/html-result.png" alt="html-page" >
+            <p>De HTML-code zorgt er dus voor dat de pagina inhoud krijgt, maar ook dat de inhoud betekenisvol is.</p>
+            <br>
+            <p>Oke, inhoud maken doen we dus met HTML... ik hoor je al denken: "Die witte achtergrondskleur vind ik maar niets".</p>
+         </section>
+          <hr>
+         <section>
+            <h2 id="css">We maken de pagina mooi met CSS!</h2>
+            <a href="https://www.w3schools.com/css/" target="_blank"><img src="./images/CSS-logo.png" alt="css-logo" class="logo"></a>
+            <p>In dit gedeelte verkennen we CSS, hetgene dat je pagina mooi zal maken!</p>
+            <p>Lees de onderstaande voorbeelden van wat CSS voor ons kan betekenen.</p>
+            <ul>
+               <li>De kleur van de tekst wijzijgen? CSS. </li>
+               <li>Een mooie achtergrondskleur zien terwijl je aan het quizzen bent?->CSS.</li>
+               <li>Een rode rode kleur wanneer je het foute antwoord geeft?->CSS.</li>
+            </ul>
+            <br>
+            <p>Oke nu heb je een beeld van wat CSS voor ons kan doen.<br>
+               Maar hoe ga je nu CSS gaan schrijven?
+            </p>
+            <br>
+            Stel je wil hoofdtitel (zit in een &lt;h1&gt;-tag) in een witte kleur zetten i.p.v de standaard zwarte kleur.<br>
+            <p></p>
+            <p>CSS heeft altijd drie zaken nodig om jou te verstaan: </p>
+            <ul>
+               <li>Het stukje inhoud dat je wil opmaken, de hoofdtitel dus-> dat stukje inhoud zit in  de &lt;h1&gt;-tag.</li>
+               <li>Welke eigenschap je van dat stukje inhoud wil wijzigen->De color-eigenschap</li>
+               <li>Hetgene wat jij wil geven als waarde van die eigenschap ->Wit</li>
+            </ul>
+            <p>De vertaling naar CSS is dan:</p>
+            <img src="./images/cssSelector.png" alt="css-selector" class="screenshot">
+            <p>Oke als je dat begrijpt, dan kan je de code hieronder kopiëren naar je "style.css"-bestand</p>
+            <iframe
+            src="https://carbon.now.sh/embed/IIM7vX3cIX8DN0b0Ve9v"
+            style="width: 1024px; height: 2419px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+
+        <p>Zie je een verschil? <br>
+        De quizz-pagina ziet er plots veel mooier uit, naast een inhoud(HTML) is er nu ook een opmaak(CSS) voor die inhoud. </p>
+            <div class="image-container">
+              <img src="./images/html-result.png" alt="html-page" >
+              <div class="arrow"></div>
+              <img src="./images/css-result.png" alt="">
+            </div>
+            <p>Oke, maar waarom verschijnt mijn eerste vraag nog niet?</p>
+         </section>
+         
+          <hr>
+
+         <section id="js">
+            <h2>Javascript voor de interactiviteit!</h2>
+            <p>Javascript is een programmeertaal dat gebruikt wordt om webpaginas interactief te maken.</p>
+            <p>Simpel gezegd wordt jouw muisklik vertaald naar het starten van de quizz!</p>
+            <a href="https://www.w3schools.com/js/" target="_blank"><img src="./images/js.png" alt="javascript-logo" class="logo"></a>
+            <details>
+               <summary>Druk eens op "Start Quizz" en leg nu zelf uit wat er wel/niet gebeurt.</summary>
+               <p>Helemaal niets! De vertaling van jouw klik is nog niet aanwezig. Zonder javascript zal je zelfs niet kunnen  beginnen aan de eerste vraag.</p>
+            </details>
+            <br>
+            <p>Het belangrijkste dat je moet onthouden is dat we de inhoud(HTML) maar ook opmaak(CSS) van de pagina zullen wijzigen op basis van jouw interactie.</p>
+            <br>
+           <p>Oke, klikken en er gebeurt iets,  maar je wil vast nog wat dieper nadenken? Lees dan verder!</p>
+   <p>Hoe komt het nu eigenlijk dat de quizz stopt als alle vragen op zijn? Dit heeft te maken met logica. Je moet eigenlijk in js-code een antwoord kunnen bieden op de volgende vraag:<br> Wanneer wil je een volgende vraag aanroepen en wanneer wil je dat ik de quizz stop?</p>
+   <br>
+   <details>
+     <summary>Formuleer in woorden een zin waardoor je op elk moment kan antwoorden op volgende vraag: "Moet ik een volgende quizzvraag aanroepen of moet ik de quizz beïndigen?"</summary>
+     <ul>
+        <li>Als(if) het nummer van de huidige vraag ( currentQuestion)</li>
+        <li>kleiner(<) is dan het totaal aantal vragen (quizzLength)</li>
+        <li>Dan ga je door met quizzen (nextQuestion roept de volgende vraag)</li>
+        <li>Zoniet(else) beïndig je de quizz(finishQuiz sluit de quizz af en toont enkele opties.)</li>
+     </ul>
+     <p>Omgezet naar code is dit:</p>
+     <pre><code>
+        if(currentQuestion < quizzLength) {
+           nextQuestion();
+        } else {
+          finishQuiz();
+    }
+  
+     </code></pre>
+   </details>
+           <br>
+           <p>Oke als je dit verstaat kan je de onderstaande javascript toevoegen in je "script.js"-bestand en nu zelf kijken of de pagina inderdaad interactief is geworden</p>
+            <iframe
+            src="https://carbon.now.sh/embed/vvqjaPdyikucpLW6erV1"
+            style="width: 1024px; height: 1414px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            <details>
+              <summary>Probeer nu eens de quizz te starten, lukt dat?</summary>
+              <p>Ja het lukt, de js-code die we hebben ingevoegd maakt dat de pagina interactief wordt.</p>
+            </details>
+            <br>
+            <hr>
+            <h2>Recap, alles samen nu!</h2>
+            <p>Dus wat hebben we allemaal gedaan?</p>
+            <ul>
+               <li>We hebben HTML geschreven en gezien dat de quizz-pagina inhoud kreeg, daarbovenop werd de inhoud  betekenisvol door de tags die rond de inhoud staan.<br>Denk aan titel(&lt;h1&gt;-tag) vs subtitel(&lt;h2;&gt;-tag) vs gewone tekst(&lt;p&gt;-tag)</li>
+               <li>We hebben daarna CSS gebruikt en we merkten dat de pagina er veel mooier uitzag. <br>
+              Denk aan hoe de kleur van de achtergrond veranderde.</li>
+               <li>Uiteindelijk hebben we javascript ingevoegd en konden we een volledige quizz maken! <br></li>
+            </ul>
+            <br>
+            <p>Actief leren is een van de beste methoden om materie te verwerken.<br> je kan de kennis die je hebt verworven nu zelf aftoetsen met je quizz!</p>
+            <div class="button-container">
+              <a href="http://127.0.0.1:5500/index.html" class="btn">Test jezelf en start de quizz!</a>
+         </section>
+      </div>
+      </main>
+      <footer>2024 START-TO-CODE</footer>
+   </body>
+</html>
